@@ -36,6 +36,7 @@
             this.Road_img2 = new System.Windows.Forms.PictureBox();
             this.redCar = new System.Windows.Forms.PictureBox();
             this.redCar1 = new System.Windows.Forms.PictureBox();
+            this.looseMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Car_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img2)).BeginInit();
@@ -102,11 +103,24 @@
             this.redCar1.TabIndex = 4;
             this.redCar1.TabStop = false;
             // 
+            // looseMessage
+            // 
+            this.looseMessage.AutoSize = true;
+            this.looseMessage.BackColor = System.Drawing.Color.Yellow;
+            this.looseMessage.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.looseMessage.Location = new System.Drawing.Point(293, 192);
+            this.looseMessage.Name = "looseMessage";
+            this.looseMessage.Size = new System.Drawing.Size(202, 48);
+            this.looseMessage.TabIndex = 5;
+            this.looseMessage.Text = "Sorry. You lose";
+            this.looseMessage.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(840, 650);
+            this.Controls.Add(this.looseMessage);
             this.Controls.Add(this.redCar1);
             this.Controls.Add(this.redCar);
             this.Controls.Add(this.Car_img);
@@ -125,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.redCar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redCar1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,6 +151,7 @@
         private System.Windows.Forms.PictureBox Road_img2;
         private System.Windows.Forms.PictureBox redCar;
         private System.Windows.Forms.PictureBox redCar1;
+        private System.Windows.Forms.Label looseMessage;
     }
 }
 

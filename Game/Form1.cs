@@ -24,7 +24,7 @@ namespace Game
             Road_img.MouseDown += MouseClickDown;
             Road_img.MouseUp += MouseClickUp;
             Road_img.MouseMove += MouseClickMove;
-
+            looseMessage.Visible = false;
         }
 
         private void MouseClickDown(object sender, MouseEventArgs e)
@@ -88,6 +88,12 @@ namespace Game
                 Random rand = new Random();
                 redCar1.Left = rand.Next(300, 560);
             }
+
+            if(Car_img.Bounds.IntersectsWith(redCar.Bounds) || Car_img.Bounds.IntersectsWith(redCar1.Bounds)) 
+            {
+                timer.Enabled = false;
+                looseMessage.Visible = true;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -109,6 +115,11 @@ namespace Game
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
