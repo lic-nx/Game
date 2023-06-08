@@ -37,6 +37,7 @@
             this.redCar = new System.Windows.Forms.PictureBox();
             this.redCar1 = new System.Windows.Forms.PictureBox();
             this.looseMessage = new System.Windows.Forms.Label();
+            this.restart_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Car_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img2)).BeginInit();
@@ -108,18 +109,30 @@
             this.looseMessage.AutoSize = true;
             this.looseMessage.BackColor = System.Drawing.Color.Yellow;
             this.looseMessage.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.looseMessage.Location = new System.Drawing.Point(293, 192);
+            this.looseMessage.Location = new System.Drawing.Point(312, 201);
             this.looseMessage.Name = "looseMessage";
             this.looseMessage.Size = new System.Drawing.Size(202, 48);
             this.looseMessage.TabIndex = 5;
             this.looseMessage.Text = "Sorry. You lose";
             this.looseMessage.Click += new System.EventHandler(this.label1_Click);
             // 
+            // restart_btn
+            // 
+            this.restart_btn.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restart_btn.Location = new System.Drawing.Point(259, 306);
+            this.restart_btn.Name = "restart_btn";
+            this.restart_btn.Size = new System.Drawing.Size(314, 95);
+            this.restart_btn.TabIndex = 6;
+            this.restart_btn.Text = "Restart";
+            this.restart_btn.UseVisualStyleBackColor = true;
+            this.restart_btn.Click += new System.EventHandler(this.restart_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(840, 650);
+            this.Controls.Add(this.restart_btn);
             this.Controls.Add(this.looseMessage);
             this.Controls.Add(this.redCar1);
             this.Controls.Add(this.redCar);
@@ -152,6 +165,7 @@
         private System.Windows.Forms.PictureBox redCar;
         private System.Windows.Forms.PictureBox redCar1;
         private System.Windows.Forms.Label looseMessage;
+        private System.Windows.Forms.Button restart_btn;
     }
 }
 

@@ -25,6 +25,7 @@ namespace Game
             Road_img.MouseUp += MouseClickUp;
             Road_img.MouseMove += MouseClickMove;
             looseMessage.Visible = false;
+            restart_btn.Visible = false;
         }
 
         private void MouseClickDown(object sender, MouseEventArgs e)
@@ -93,6 +94,7 @@ namespace Game
             {
                 timer.Enabled = false;
                 looseMessage.Visible = true;
+                restart_btn.Visible = true;
             }
         }
 
@@ -121,6 +123,16 @@ namespace Game
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void restart_btn_Click(object sender, EventArgs e)
+        {
+            redCar1.Top = -400;
+            redCar.Top = -130;
+            looseMessage.Visible = false;
+            restart_btn.Visible = false;
+            timer.Enabled = true;
 
         }
     }
