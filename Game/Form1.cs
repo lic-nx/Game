@@ -76,8 +76,8 @@ namespace Game
                 Road_img2.Top = -640;
                 Road_img.Top = 0;
             }
-            if (redCar.Top >= 160) redCar.Top = -130;
-            if (redCar1.Top >= 160) redCar1.Top = -400;
+            if (redCar.Top >= 650) redCar.Top = -130;
+            if (redCar1.Top >= 650) redCar1.Top = -400;
         }
 
         private void Form1_Load(object sender, EventArgs e)
