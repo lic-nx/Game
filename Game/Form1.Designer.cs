@@ -29,13 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Car_img = new System.Windows.Forms.PictureBox();
             this.Road_img = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.Road_img2 = new System.Windows.Forms.PictureBox();
+            this.redCar = new System.Windows.Forms.PictureBox();
+            this.redCar1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Car_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redCar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redCar1)).BeginInit();
             this.SuspendLayout();
             // 
             // Car_img
@@ -74,11 +79,36 @@
             this.Road_img2.TabIndex = 2;
             this.Road_img2.TabStop = false;
             // 
+            // redCar
+            // 
+            this.redCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.redCar.Image = ((System.Drawing.Image)(resources.GetObject("redCar.Image")));
+            this.redCar.Location = new System.Drawing.Point(170, -130);
+            this.redCar.Name = "redCar";
+            this.redCar.Size = new System.Drawing.Size(128, 128);
+            this.redCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.redCar.TabIndex = 3;
+            this.redCar.TabStop = false;
+            this.redCar.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // redCar1
+            // 
+            this.redCar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.redCar1.Image = ((System.Drawing.Image)(resources.GetObject("redCar1.Image")));
+            this.redCar1.Location = new System.Drawing.Point(538, -400);
+            this.redCar1.Name = "redCar1";
+            this.redCar1.Size = new System.Drawing.Size(128, 128);
+            this.redCar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.redCar1.TabIndex = 4;
+            this.redCar1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(840, 650);
+            this.Controls.Add(this.redCar1);
+            this.Controls.Add(this.redCar);
             this.Controls.Add(this.Car_img);
             this.Controls.Add(this.Road_img);
             this.Controls.Add(this.Road_img2);
@@ -92,6 +122,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Car_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Road_img2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redCar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redCar1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -102,6 +134,8 @@
         private System.Windows.Forms.PictureBox Car_img;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox Road_img2;
+        private System.Windows.Forms.PictureBox redCar;
+        private System.Windows.Forms.PictureBox redCar1;
     }
 }
 
