@@ -26,6 +26,7 @@ namespace Game
             Road_img.MouseMove += MouseClickMove;
             looseMessage.Visible = false;
             restart_btn.Visible = false;
+            KeyPreview = true;
         }
 
         private void MouseClickDown(object sender, MouseEventArgs e)
